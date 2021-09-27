@@ -4,9 +4,9 @@ rule "rule 1"
 	ruleflow-group "ruleflow-group1"
 	dialect "mvel"
 	when
-	    java.util.String.valueOf(null);
-		testDO : TestDO();
+
+	   abc: Object();
 		
 	then
-		testDO.setResultValue( "one" );
+		System.out.println("abc="+abc);
 end
