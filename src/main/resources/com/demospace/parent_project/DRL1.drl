@@ -9,5 +9,5 @@ rule "rule 1"
 		
 	then
 
-		System.out.println("abc="+abc.getClass());
+		System.out.println("abc="+((java.util.HashMap)abc).keySet());
 end
