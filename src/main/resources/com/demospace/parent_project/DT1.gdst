@@ -147,7 +147,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>one</valueString>
+        <valueString>&quot;one&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -182,7 +182,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>one &amp; two</valueString>
+        <valueString>&quot;one &amp; two&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
