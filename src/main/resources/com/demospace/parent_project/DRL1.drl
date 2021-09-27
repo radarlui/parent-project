@@ -4,7 +4,7 @@ rule "rule 1"
 	ruleflow-group "ruleflow-group1"
 	dialect "mvel"
 	when
-		testDO : TestDO(testResult.toString() ==null );
+		testDO : TestDO(resultValue.toString().equals("Asdf") );
 		
 	then
 		testDO.setResultValue( "one" );
