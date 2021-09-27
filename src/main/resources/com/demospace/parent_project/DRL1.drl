@@ -4,8 +4,8 @@ rule "rule 1"
 	ruleflow-group "ruleflow-group1"
 	dialect "mvel"
 	when
-		testDO : TestDO( )
-		testDO.getTestValue2
+		testDO : TestDO( );
+		testDO.getTestValue2;
 	then
 		testDO.setResultValue( "one" );
 end
