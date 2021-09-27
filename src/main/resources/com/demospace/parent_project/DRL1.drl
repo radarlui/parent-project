@@ -1,2 +1,10 @@
 package com.demospace.parent_project;
 
+rule "Row 1 DT1"
+	ruleflow-group "ruleflow-group1"
+	dialect "mvel"
+	when
+		testDO : TestDO( )
+	then
+		testDO.setResultValue( "one" );
+end
