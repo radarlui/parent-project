@@ -9,7 +9,9 @@ public class TestDO implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.Integer testValue1;
-	private java.lang.Integer resultValue;
+	private String resultValue;
+
+	private java.lang.Integer testValue2;
 
 	public TestDO() {
 	}
@@ -22,17 +24,27 @@ public class TestDO implements java.io.Serializable {
 		this.testValue1 = testValue1;
 	}
 
-	public java.lang.Integer getResultValue() {
+	public java.lang.Integer getTestValue2() {
+		return this.testValue2;
+	}
+
+	public void setTestValue2(java.lang.Integer testValue2) {
+		this.testValue2 = testValue2;
+	}
+
+	public java.lang.String getResultValue() {
 		return this.resultValue;
 	}
 
-	public void setResultValue(java.lang.Integer resultValue) {
+	public void setResultValue(java.lang.String resultValue) {
 		this.resultValue = resultValue;
 	}
 
-	public TestDO(java.lang.Integer testValue1, java.lang.Integer resultValue) {
+	public TestDO(java.lang.Integer testValue1, java.lang.String resultValue,
+			java.lang.Integer testValue2) {
 		this.testValue1 = testValue1;
 		this.resultValue = resultValue;
+		this.testValue2 = testValue2;
 	}
 
 }
