@@ -8,7 +8,7 @@ rule "rule 1"
 	   abc: Object();
 		
 	then
-	 System.out.println("abc class="+abc.getClass());
+	 //System.out.println("abc class="+abc.getClass());
         System.out.println("abc="+abc);
-		//System.out.println("abc="+((java.util.HashMap)abc).keySet());
+		System.out.println("abc="+((java.util.HashMap)abc).keySet());
 end
