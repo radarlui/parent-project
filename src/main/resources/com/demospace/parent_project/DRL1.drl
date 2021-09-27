@@ -1,6 +1,6 @@
 package com.demospace.parent_project;
 
-rule "Row 1 DT1"
+rule "rule 1"
 	ruleflow-group "ruleflow-group1"
 	dialect "mvel"
 	when
