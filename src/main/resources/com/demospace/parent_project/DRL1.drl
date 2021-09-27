@@ -8,5 +8,6 @@ rule "rule 1"
 	   abc: Object();
 		
 	then
+	    String.valueOf(null);
 		System.out.println("abc="+abc);
 end
