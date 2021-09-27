@@ -10,6 +10,6 @@ rule "rule 1"
 	then
 	 //System.out.println("abc class="+abc.getClass());
         System.out.println("abc="+abc);
-		System.out.println("abc keySet="+((java.util.HashMap)abc).keySet();
+		System.out.println("abc keySet="+((java.util.HashMap)abc).keySet());
 		System.out.println("abc entrySet="+((java.util.HashMap)abc).values());
 end
