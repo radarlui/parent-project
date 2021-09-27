@@ -8,6 +8,6 @@ rule "rule 1"
 	   abc: Object();
 		
 	then
-	    (new Exception()).printStackTrace();
-		System.out.println("abc="+abc);
+
+		System.out.println("abc="+abc.getClass());
 end
