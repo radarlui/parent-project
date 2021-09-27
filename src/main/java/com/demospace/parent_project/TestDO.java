@@ -6,12 +6,33 @@ package com.demospace.parent_project;
 
 public class TestDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TestDO() {
-    }
+	private java.lang.Integer testValue1;
+	private java.lang.Integer resultValue;
 
+	public TestDO() {
+	}
 
+	public java.lang.Integer getTestValue1() {
+		return this.testValue1;
+	}
 
+	public void setTestValue1(java.lang.Integer testValue1) {
+		this.testValue1 = testValue1;
+	}
+
+	public java.lang.Integer getResultValue() {
+		return this.resultValue;
+	}
+
+	public void setResultValue(java.lang.Integer resultValue) {
+		this.resultValue = resultValue;
+	}
+
+	public TestDO(java.lang.Integer testValue1, java.lang.Integer resultValue) {
+		this.testValue1 = testValue1;
+		this.resultValue = resultValue;
+	}
 
 }
