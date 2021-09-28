@@ -54,6 +54,11 @@ public class TestDO implements java.io.Serializable {
 		testDO.resultValue = this.resultValue;
 		testDO.testValue2 = this.testValue2;
 	}
+	
+	public String toString()
+	{
+	    return "testValue1="+this.testValue1 + " testValue2="+this.testValue2 + " resultValue="+this.resultValue;
+	}
 
 
 }
