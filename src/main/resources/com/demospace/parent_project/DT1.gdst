@@ -65,7 +65,7 @@
       <boundName>testDO</boundName>
       <factField>testValue2</factField>
       <type>Integer</type>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
