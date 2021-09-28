@@ -51,7 +51,7 @@ public class TestDO implements java.io.Serializable {
 	public void cloneTo(TestDO testDO)
 	{
 	    testDO.testValue1 = this.testValue1;
-		testDO.resulttValue = this.resultValue;
+		testDO.resultValue = this.resultValue;
 		testDO.testValue2 = this.testValue2;
 	}
 
