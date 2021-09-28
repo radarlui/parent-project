@@ -1,5 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="parent-project-kbase" default="true" eventProcessingMode="stream" equalsBehavior="identity">
+  <kbase name="parent-project-kbase" default="true" eventProcessingMode="stream" equalsBehavior="identity" includes="child-project-sl-ksession">
     <ksession name="parent-project-sl-ksession" type="stateless" default="false" clockType="realtime"/>
     <ksession name="parent-project-sf-ksession" type="stateful" default="true" clockType="realtime"/>
   </kbase>
