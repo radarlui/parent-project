@@ -47,11 +47,11 @@ public class TestDO implements java.io.Serializable {
 		this.testValue2 = testValue2;
 	}
 	
-	/*
+
 	public TestDO clone()
 	{
-	    return super.clone();
+	    return this.clone();
 	}
-	*/
+
 
 }
