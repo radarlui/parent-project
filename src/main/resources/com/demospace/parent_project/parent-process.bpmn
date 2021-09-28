@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_WU9kUCA6Eey2Zasw2-1g1Q" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_MYTpwCBBEeyc5oypEgHZlg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_procVarItem" structureRef="com.demospace.parent_project.TestDO"/>
   <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_decisionInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputXItem" structureRef="com.demospace.parent_project.TestDO"/>
-  <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputXItem" structureRef="com.demospace.parent_project.TestDO"/>
+  <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputXItem" structureRef="com.demospace.TestDO"/>
+  <bpmn2:itemDefinition id="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputXItem" structureRef="com.demospace.TestDO"/>
   <bpmn2:process id="parent-project.parent-process" drools:packageName="com.demospace.parent_project" drools:version="1.0" drools:adHoc="false" name="parent-process" isExecutable="true">
     <bpmn2:property id="procVar" itemSubjectRef="_procVarItem" name="procVar"/>
     <bpmn2:sequenceFlow id="_B85C0304-AC31-46A8-B2E2-1EB365EE7625" sourceRef="_33E37707-75E6-4BAD-9ED4-1F55CDE9C7CC" targetRef="_ACD4B1B4-CE54-4BAC-8A30-C3DC9453D95B">
@@ -99,28 +99,28 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
       </bpmn2:extensionElements>
       <bpmn2:incoming>_0DCB4152-0045-4E36-84C9-B54DC7632D9E</bpmn2:incoming>
       <bpmn2:outgoing>_DAFC7A2F-23B9-43E8-A2BD-D3511AB63995</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_WU-LYCA6Eey2Zasw2-1g1Q">
-        <bpmn2:dataInput id="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputX" drools:dtype="com.demospace.parent_project.TestDO" itemSubjectRef="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputXItem" name="testDO1"/>
-        <bpmn2:dataOutput id="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputX" drools:dtype="com.demospace.parent_project.TestDO" itemSubjectRef="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputXItem" name="testDO1"/>
-        <bpmn2:inputSet id="_WU-LYSA6Eey2Zasw2-1g1Q">
+      <bpmn2:ioSpecification id="_MYUQ0CBBEeyc5oypEgHZlg">
+        <bpmn2:dataInput id="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputX" drools:dtype="com.demospace.TestDO" itemSubjectRef="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputXItem" name="testDO1"/>
+        <bpmn2:dataOutput id="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputX" drools:dtype="com.demospace.TestDO" itemSubjectRef="__1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputXItem" name="testDO1"/>
+        <bpmn2:inputSet id="_MYUQ0SBBEeyc5oypEgHZlg">
           <bpmn2:dataInputRefs>_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_WU-LYiA6Eey2Zasw2-1g1Q">
+        <bpmn2:outputSet id="_MYUQ0iBBEeyc5oypEgHZlg">
           <bpmn2:dataOutputRefs>_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_WU-LYyA6Eey2Zasw2-1g1Q">
+      <bpmn2:dataInputAssociation id="_MYUQ0yBBEeyc5oypEgHZlg">
         <bpmn2:sourceRef>procVar</bpmn2:sourceRef>
         <bpmn2:targetRef>_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1InputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_WU-LZCA6Eey2Zasw2-1g1Q">
+      <bpmn2:dataOutputAssociation id="_MYUQ1CBBEeyc5oypEgHZlg">
         <bpmn2:sourceRef>_1509B7F1-C94F-4BA5-968A-7AF60AA321EC_testDO1OutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>procVar</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_WU-LZSA6Eey2Zasw2-1g1Q">
-    <bpmndi:BPMNPlane id="_WU-LZiA6Eey2Zasw2-1g1Q" bpmnElement="parent-project.parent-process">
+  <bpmndi:BPMNDiagram id="_MYUQ1SBBEeyc5oypEgHZlg">
+    <bpmndi:BPMNPlane id="_MYUQ1iBBEeyc5oypEgHZlg" bpmnElement="parent-project.parent-process">
       <bpmndi:BPMNShape id="shape__1509B7F1-C94F-4BA5-968A-7AF60AA321EC" bpmnElement="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC">
         <dc:Bounds height="102.0" width="154.0" x="669.0" y="166.0"/>
       </bpmndi:BPMNShape>
@@ -161,12 +161,12 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_WU-ycCA6Eey2Zasw2-1g1Q" type="BPSimData">
+  <bpmn2:relationship id="_MYUQ1yBBEeyc5oypEgHZlg" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC" id="_WU-ycSA6Eey2Zasw2-1g1Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1509B7F1-C94F-4BA5-968A-7AF60AA321EC" id="_MYUQ2CBBEeyc5oypEgHZlg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -186,7 +186,7 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7D8FE6CE-705A-47F4-829C-5D26770EC6D5" id="_WU-yciA6Eey2Zasw2-1g1Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7D8FE6CE-705A-47F4-829C-5D26770EC6D5" id="_MYUQ2SBBEeyc5oypEgHZlg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -206,7 +206,7 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_ACD4B1B4-CE54-4BAC-8A30-C3DC9453D95B" id="_WU-ycyA6Eey2Zasw2-1g1Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_ACD4B1B4-CE54-4BAC-8A30-C3DC9453D95B" id="_MYU34CBBEeyc5oypEgHZlg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -226,14 +226,14 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_33E37707-75E6-4BAD-9ED4-1F55CDE9C7CC" id="_WU_ZgCA6Eey2Zasw2-1g1Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_33E37707-75E6-4BAD-9ED4-1F55CDE9C7CC" id="_MYU34SBBEeyc5oypEgHZlg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_11CC6B22-7D6C-424A-9CB3-2744F7A7CEF2" id="_WU_ZgSA6Eey2Zasw2-1g1Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_11CC6B22-7D6C-424A-9CB3-2744F7A7CEF2" id="_MYU34iBBEeyc5oypEgHZlg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -256,7 +256,7 @@ System.out.println("procVar="+kcontext.getVariable("procVar"));]]></bpmn2:script
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_WU9kUCA6Eey2Zasw2-1g1Q</bpmn2:source>
-    <bpmn2:target>_WU9kUCA6Eey2Zasw2-1g1Q</bpmn2:target>
+    <bpmn2:source>_MYTpwCBBEeyc5oypEgHZlg</bpmn2:source>
+    <bpmn2:target>_MYTpwCBBEeyc5oypEgHZlg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
