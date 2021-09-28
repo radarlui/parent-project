@@ -48,9 +48,11 @@ public class TestDO implements java.io.Serializable {
 	}
 	
 
-	public TestDO clone()
+	public TestDO cloneTo(TestDO testDO)
 	{
-	    return this.clone();
+	    testDO.testValue1 = this.testValue1;
+		testDO.reulstValue = this.resultValue;
+		testDO.testValue2 = this.testValue2;
 	}
 
 
