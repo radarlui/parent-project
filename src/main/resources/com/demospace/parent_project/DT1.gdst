@@ -96,7 +96,11 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>com.demospace.TestDO</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com.demospace.parent_project</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
