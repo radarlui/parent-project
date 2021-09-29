@@ -8,6 +8,10 @@
     <hideColumn>false</hideColumn>
     <width>150</width>
   </descriptionCol>
+  <ruleNameColumn>
+    <hideColumn>true</hideColumn>
+    <width>150</width>
+  </ruleNameColumn>
   <metadataCols/>
   <attributeCols>
     <attribute-column52>
@@ -103,6 +107,7 @@
     </imports>
   </imports>
   <packageName>com.demospace.parent_project</packageName>
+  <version>739</version>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -111,6 +116,11 @@
         <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
