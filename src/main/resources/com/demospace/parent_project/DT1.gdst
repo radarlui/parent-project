@@ -8,6 +8,10 @@
     <hideColumn>false</hideColumn>
     <width>150</width>
   </descriptionCol>
+  <ruleNameColumn>
+    <hideColumn>true</hideColumn>
+    <width>150</width>
+  </ruleNameColumn>
   <metadataCols/>
   <attributeCols>
     <attribute-column52>
@@ -16,7 +20,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>true</hideColumn>
+      <hideColumn>false</hideColumn>
       <width>100</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
@@ -103,6 +107,7 @@
     </imports>
   </imports>
   <packageName>com.demospace.parent_project</packageName>
+  <version>739</version>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -119,7 +124,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>ruleflow-group1</valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>parent-ruleflow-group1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
